@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title style="background-color: aquamarine;">Conocenos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <header>
+    <h1>Conocenos</h1>
+    <p>¡Pasión por el Fronton!</p>
+    
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+    <a href="Index.html">Inicio</a>
+    <a href="conocenos.html">Conócenos</a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+
+  <span id="menuBtn" style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="toggleNav()">&#9776; </span>
+
+  <h2 style="text-align:center; margin-bottom: -5px;">¿Quienes somos?</h2>
+  <section>
+    <div class="contenedor-imagenes">
+      <div class="contenedor-imagen">
+        <div class="texto-imagen">Texto 1</div>
+        <img src="" alt="Imagen 1">
+      </div>
+      <div class="contenedor-imagen">
+        <div class="texto-imagen">Texto 2</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKnEyzMBrNbD4ImW5O75aK5XAbfFipB1oyg&s"
+          alt="Imagen 2">
+      </div>
+      <div class="contenedor-imagen">
+        <div class="texto-imagen">Texto 3</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKnEyzMBrNbD4ImW5O75aK5XAbfFipB1oyg&s"
+          alt="Imagen 3">
+      </div>
+    </div>
+  </section>
+
+  <div class="eaa">
+    <p class="texto-original"></p>
+    <p class="texto-hover"></p>
+  </div>
+
+  <style>
+    .texto-hover {
+      display: none;
+      /* Oculta el texto de hover inicialmente */
+    }
+
+    .eaa:hover .texto-original {
+      display: none;
+      /* Oculta el texto original al hacer hover */
+    }
+
+    .eaa:hover .texto-hover {
+      display: block;
+      cursor: help;
+    }
+  </style>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

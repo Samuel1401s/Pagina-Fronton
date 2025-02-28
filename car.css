@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(213, 235, 236);
+    overflow-x: hidden; 
+}
+
+header {
+    background-color:rgb(75, 147, 255, 0.397);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    color: black;
+}
+
+header .butin {
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .butin:hover {
+    background-color: rgb(138, 231, 212);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#menuBtn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.galeria {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-imagen {
+    position: relative;
+    margin: 10px;
+    transition: transform 0.5s ease;
+    width: calc(33.333% - 20px); /* Tres imágenes por fila */
+    box-sizing: border-box;
+}
+
+.contenedor-imagen.grande {
+    width: calc(100% - 20px); /* Ocupa el ancho de dos imágenes */
+    margin: 25px;
+    margin-top: 7px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenedor-imagen.grande img {
+    height: 400px; /* Ajusta la altura de la imagen grande */
+}
+
+.contenedor-imagen:hover {
+    transform: scale(1.05);
+}
+
+.titulo-imagen {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
