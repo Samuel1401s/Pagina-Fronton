@@ -50,3 +50,4 @@ fetch('menu.html')
     .then(data => {
         document.getElementById('menuContainer').innerHTML = data;
     });
+   

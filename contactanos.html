@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conócenos</title>
-    <link rel="stylesheet" href="Ccar.css">
+    
+    <title>Contáctanos</title>
+
     <script src="script.js"></script>
     <style>
-        header, section, footer {
-            width: 100%;
-            max-width: none;
-        }
-
-        header {
-            background-color: #4b93ff; /* Color de fondo del header */
-            text-align: center;
-            color: white;
-            padding: 10px;
-        }
-
-        body {
+        body{
             font-family: Arial;
         }
-
         .contact-container {
-            margin-top: 0; 
-            display: flex;
-            justify-content: space-around;
+            margin-left: 60px;
             padding: 20px;
+            margin-top: -70px;
         }
 
         .contact-member {
             background-color: #fff;
-            padding: 20px;
+            margin-bottom: 20px;
+            padding: 35px;
+
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 35%;
+            display: flex;
+            align-items: center;
         }
 
         .contact-member img {
-            max-width: 200px;
+            max-width: 150px;
             height: auto;
-            
             border-radius: 7px;
-            margin-bottom: 10px;
+            margin-right: 20px;
         }
 
         .contact-member p {
             margin: 5px 0;
             font-size: 18px;
+
         }
 
         .contact-member a {
@@ -71,10 +59,36 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+
         }
 
         .sidenav a {
             padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav {
+            height: 50%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 19px;
+            left: 0;
+            background-color: #30ccc4;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 10px;
             text-decoration: none;
             font-size: 25px;
             color: #000000;
@@ -103,16 +117,12 @@
         }
 
         .locote {
-            font-size: 16px;
+            font-size: 11px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Conócenos</h1>
-    </header>
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
         <a href="index.html">Inicio</a>
@@ -120,15 +130,19 @@
         <a href="contactanos.html">Contáctanos</a>
     </div>
 
-    <span id="menuBtn" onclick="toggleNav()">&#9776;</span>
+    <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span>
 
     <div class="contact-container">
+        <h1>Contáctanos</h1>
         <div class="contact-member">
             <img src="imagenes/Personas/docto.jpeg" alt="Integrante 1">
-            <p> Juan Pérez</p>
-            <p> Presidente de la asociación de frontón de Baja California</p>
-            <p> <a href="tel:+52 1 686 149 1231">+52 1 686 149 1231</a></p>
-            <p> <a href="PETS@COMERCIALVETERINARIA.COM.MX">PETS@COMERCIALVETERINARIA.COM.MX</a></p>
+            <p>Nombre: <br>Juan Pérez&nbsp; </p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p class="locote"> Presidente de la <br>asociación de frontón de Baja California</p><br>
+            <p>Teléfono:<br> <a href="tel:+52 1 686 149 1231">+52 1 686 149 1231&nbsp;</a></p>
+            <div class="locote"><p class="locote">Correo: <a href="PETS@COMERCIALVETERINARIA.COM.MX">PETS@COMERCIALVETERINARIA.COM.MX</a></div>
+            </p>
+            
+
         </div>
         <div class="contact-member">
             <img src="integrante2.jpg" alt="Integrante 2">
@@ -146,4 +160,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -6,11 +6,11 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(213, 235, 236);
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 header {
-    background-color:rgb(75, 147, 255, 0.397);
+    background-color: rgb(75, 147, 255, 0.397);
     text-align: center;
     color: white;
     padding: 20px;
@@ -34,7 +34,6 @@ header .butin {
 header .butin:hover {
     background-color: rgb(138, 231, 212);
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -42,17 +41,43 @@ header .butin:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #30ccc4;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav {
+    height: 50%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top:19px;
+    left: 0;
+    background-color: #30ccc4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
     display: block;
     transition: 0.3s;
 }
@@ -64,7 +89,7 @@ header .butin:hover {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 16px;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -96,25 +121,29 @@ header .butin:hover {
     position: relative;
     margin: 10px;
     transition: transform 0.5s ease;
-    width: calc(33.333% - 20px); /* Tres imágenes por fila */
+    width: calc(33.333% - 20px);
+    /* Tres imágenes por fila */
     box-sizing: border-box;
 }
 
 .contenedor-imagen.grande {
-    width: calc(100% - 20px); /* Ocupa el ancho de dos imágenes */
+    width: calc(100% - 20px);
+    /* Ocupa el ancho de dos imágenes */
     margin: 25px;
     margin-top: 7px;
 }
 
 .contenedor-imagen img {
     width: 100%;
-    height: 200px; /* Establece una altura fija para todas las imágenes */
+    height: 200px;
+    /* Establece una altura fija para todas las imágenes */
     object-fit: cover;
     border-radius: 10px;
 }
 
 .contenedor-imagen.grande img {
-    height: 400px; /* Ajusta la altura de la imagen grande */
+    height: 400px;
+    /* Ajusta la altura de la imagen grande */
 }
 
 .contenedor-imagen:hover {
