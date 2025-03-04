@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(213, 235, 236);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 
@@ -15,25 +15,11 @@ header {
     color: white;
     padding: 20px;
     width: 100%;
-    color: rgb(255, 255, 255);
+
 }
 
-header .butin {
-    background-color:rgb(0, 99, 65);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-header .butin:hover {
-    background-color: rgb(138, 231, 212);
-}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -45,7 +31,7 @@ header .butin:hover {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    
+
 }
 
 .sidenav a {
@@ -59,10 +45,10 @@ header .butin:hover {
 
 .sidenav {
     height: 50%;
-    width:0;
+    width: 0;
     position: fixed;
     z-index: 1;
-    top:19px;
+    top: 19px;
     left: 0;
     background-color: #30ccc4;
     overflow-x: hidden;
@@ -100,6 +86,7 @@ header .butin:hover {
     position: fixed;
     top: 10px;
     left: 10px;
+    color: white;
 }
 
 .galeria {
@@ -136,14 +123,14 @@ header .butin:hover {
 .contenedor-imagen img {
     width: 100%;
     height: 200px;
-    /* Establece una altura fija para todas las imágenes */
+
     object-fit: cover;
     border-radius: 10px;
 }
 
 .contenedor-imagen.grande img {
     height: 400px;
-    /* Ajusta la altura de la imagen grande */
+
 }
 
 .contenedor-imagen:hover {
@@ -161,4 +148,27 @@ header .butin:hover {
     border-radius: 5px;
     font-size: 14px;
     text-align: center;
+}
+
+
+.butin {
+    background-color: #f8f8f8;
+    color: rgb(0, 99, 65);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    height: auto;
+    width: 100px;
+    border: 2px solid rgb(0, 99, 65);
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.butin:hover {
+    background-color: rgb(0, 99, 65);
+    color: white;
 }

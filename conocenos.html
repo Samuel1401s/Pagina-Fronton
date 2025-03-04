@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="Ccar.css">
     <script src="script.js"></script>
     <style>
-        header, section, footer {
+        header,
+        section,
+        footer {
             width: 100%;
             max-width: none;
         }
@@ -16,7 +19,7 @@
             background-color: (0, 99, 65);
             text-align: center;
             color: rgb(255, 255, 255);
-            padding: 10px;
+            padding: 15px;
         }
 
         body {
@@ -24,7 +27,7 @@
         }
 
         .contact-container {
-            margin-top: 0; 
+            margin-top: 0;
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -41,7 +44,7 @@
         .contact-member img {
             max-width: 200px;
             height: auto;
-            
+
             border-radius: 1000px;
             margin-bottom: 10px;
         }
@@ -71,6 +74,23 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+
+        }
+
+        .sidenav {
+            height: 50%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 19px;
+            left: 0;
+            background-color: #30ccc4;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
         }
 
         .sidenav a {
@@ -100,22 +120,26 @@
             position: fixed;
             top: 10px;
             left: 10px;
+            color: white;
         }
 
         .locote {
             font-size: 16px;
         }
-        .cajuta{color: #000000;
-        padding: 20px;
-        width: 100%;
-        background-color: darkgray;
-        text-align: center;
-    }
+
+        .cajuta {
+            color: #000000;
+            padding: 20px;
+            width: 100%;
+            background-color: darkgray;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <img src="imagenes/Logo.jpeg" alt="Logo del Club" style="height: 100px; border-radius: 100%; position: absolute; right: 20px; margin-top: -12px;">
         <h1>Conócenos</h1>
     </header>
 
@@ -123,7 +147,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
         <a href="index.html">Inicio</a>
         <a href="conocenos.html">Conócenos</a>
-        <a href="contactanos.html">Contáctanos</a>
+        <a href="Sedes.html">Sedes</a>
     </div>
 
     <span id="menuBtn" onclick="toggleNav()">&#9776;</span>
@@ -153,8 +177,9 @@
     </div>
     <div class=" cajuta">
         <p>esdfds</p>
-        
+
 
     </div>
 </body>
+
 </html>

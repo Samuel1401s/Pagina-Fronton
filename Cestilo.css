@@ -120,7 +120,7 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex;
-    border-radius: 10px;
+    
     margin: 7px;
     transition: transform 2s ease !important;
 }
@@ -239,6 +239,7 @@ header {
     position: fixed;
     top: 10px;
     left: 10px;
+    color: white;
 }
 .carousel-item {
     position: relative;
